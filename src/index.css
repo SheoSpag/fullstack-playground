@@ -1,9 +1,18 @@
-body {
+* {
   margin: 0;
-  background: #222;
-  font-family: system-ui;
-  display: grid;
-  place-content: center;
-  min-height: 100vh;
-  color: aliceblue;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../public/gif.gif'); /* o un link directo */
+  opacity: 0.007; /* podés ajustar esto para más o menos ruido */
+  pointer-events: none; /* para que no bloquee clicks */
+  z-index: 9999; /* encima de todo */
 }
