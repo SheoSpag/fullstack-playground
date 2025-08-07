@@ -25,7 +25,7 @@
   width: 100%;
   overflow: hidden;
   background-color: var(--primary-color);
-    
+
 }
 
 .main_img {
@@ -43,7 +43,7 @@
   position: relative;
   z-index: 2;
   font-size: 4rem;
-  color: white; /* o el color que quieras */
+  color: var(--secondary-color);
   text-align: center;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 200px;  
@@ -52,7 +52,34 @@
 }
 
 .home_menu {
-    height: 100vh;
+    height: auto;
     width: 100%;
-    background-color: var(--primary-color);
+    background-image: url("../../public/background.png");
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+
+.home_menu_title {
+    color: var(--secondary-color);
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 150px; 
+}
+
+.menu_title_span{
+    color: var(--detail-color);
+}
+
+.home_menu_items {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
