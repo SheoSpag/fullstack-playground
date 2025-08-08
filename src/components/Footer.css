@@ -1,0 +1,84 @@
+:root {
+  --primary-color: #0A0A0A;
+  --secondary-color: #F2F2F2;
+  --detail-color: #C7A34B;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: 'Bebas Neue', sans-serif;
+  padding: 30px 20px 10px;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer_logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer_img {
+  width: 60px;
+  height: 60px;
+}
+
+.footer_title {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+}
+
+.footer_title_span{
+    color: var(--detail-color);
+}
+.footer_title_span_c{
+    color: var(--detail-color);
+    font-size: 1.4rem;
+}
+
+.footer_links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer_links a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer_links a:hover {
+  color: var(--detail-color);
+}
+
+.footer_social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer_social a {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer_social a:hover {
+  color: var(--detail-color);
+}
+
+.footer_bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-top: 20px;
+}

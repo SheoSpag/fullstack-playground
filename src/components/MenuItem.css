@@ -20,7 +20,7 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transition: all 0.2s ease-in-out;
-
+    position: relative;
 }
 
 .item_container > * {
@@ -67,3 +67,12 @@
     width: 100px;
 }
 
+.new_product{
+    position: absolute;
+    top: 80%;
+    left: 95%;
+    height: 50px;
+    width: 50px;
+    border-radius: 80%;
+    background-color: var(--primary-color);
+}

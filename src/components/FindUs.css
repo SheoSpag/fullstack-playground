@@ -1,0 +1,31 @@
+:root {
+  --primary-color: #0A0A0A;
+  --secondary-color: #F2F2F2;
+  --detail-color: #C7A34B;
+}
+
+.find_us_container{
+    background-color: var(--primary-color);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.find_us_title{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px; 
+    color: var(--secondary-color);
+}
+
+.find_us_title_span {
+    color: var(--detail-color)
+}
+
+.find_us_map {
+    height: 350px;
+    width: 600px;
+    ;
+}
