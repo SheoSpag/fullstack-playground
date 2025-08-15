@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #0a0a0a;
+  --secondary-color: #f2f2f2;
+  --detail-color: #c7a34b;
+}
+
+.about_container {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding-top: 60px;
+}
+
+.about_intro {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;       
+  color: var(--secondary-color);
+  font-family: "Bebas Neue", sans-serif;
+  display: flex;           
+}
+
+.intro_izquierda {
+  position: relative;
+  z-index: 2;
+  width: 68%;
+  padding: 64px 56px 56px;
+  background: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* crea el borde diagonal: ajusta puntos a gusto */
+  clip-path: polygon(0 0, 92% 0, 72% 100%, 0% 100%);
+  box-shadow: 0 0 0 1px rgba(255,255,255,.02) inset; /* sutil borde tipo afiche */
+}
+
+.intro_title {
+  font-size: clamp(64px, 11vw, 150px);
+  line-height: .9;
+  margin: 0 0 16px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.intro_title--accent {
+  color: var(--detail-color);
+}
+
+.intro_text {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: clamp(14px, 1.2vw, 16px);
+  line-height: 1.55;
+  max-width: 56ch;
+  color: var(--secondary-color);
+  margin: 12px 0 0 0;
+}
+.intro_derecha {
+  position: absolute;   
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 52%;
+  display: block;
+}
+
+.intro_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(100%) contrast(115%);
+}

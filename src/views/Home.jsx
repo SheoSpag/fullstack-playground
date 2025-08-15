@@ -2,10 +2,8 @@ import React from "react";
 
 import "./Home.css";
 
-import NavBar from "../components/NavBar";
 import FindUs from "../components/FindUs";
 import MenuItem from "../components/MenuItem";
-import Footer from "../components/Footer";
 
 
 
@@ -13,7 +11,6 @@ function Home(){
     return(
         <>
             <div className="home_container">
-                <NavBar />
                 
                 <main className="home_main">
                     <h1 className='home_main_title'>THE FOOD TRUCK<span className="menu_title_span">©</span> !</h1>
@@ -36,9 +33,6 @@ function Home(){
                     </div>
                 </div>
 
-                <div className="home_footer">
-                    <Footer />
-                </div>
             </div>
         </>
     )

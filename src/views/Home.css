@@ -4,19 +4,30 @@
   --detail-color: #C7A34B;
 }
 
-.home_container {
-    height: 100vh;
-    width: 100%;
-    background-color: var(--primary-color);   
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -4rem;
+  }
+  50% {
+    top: -8rem;
+  }
+  75% {
+    top: -12rem;
+  }
+  100% {
+    top: 0;
+  }
 }
 
-.home_navbar {
-    height: auto;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000; 
+/* Estilos actuales */
+
+.home_container {
+  height: auto;
+  width: 100%;
+  background-color: var(--primary-color);
 }
 
 .home_main {
@@ -28,7 +39,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main_img {
@@ -41,49 +54,46 @@
   z-index: 1;
 }
 
-
 .home_main_title {
   position: relative;
   z-index: 2;
-  font-size: 4rem;
+  font-size: 200px;
   color: var(--secondary-color);
-  text-align: center;
+  text-align: ce  nter;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 200px;  
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .home_menu {
-    height: auto;
-    width: 100%;
-    background-image: url("../../public/background.png");
-    background-repeat: none;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 100px;
+  height: auto;
+  width: 100%;
+  background-image: url("../../public/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
 }
-
 
 .home_menu_title {
-    color: var(--secondary-color);
-    text-align: center;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 150px; 
+  color: var(--secondary-color);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 150px;
+  height: auto;
+  width: 100%;
+  text-align: center;
 }
 
-.menu_title_span{
-    color: var(--detail-color);
-    font-size: 150px;
+.menu_title_span {
+  color: var(--detail-color);
+  font-size: 150px;
 }
 
 .home_menu_items {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
